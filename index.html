@@ -1,0 +1,32 @@
+<!doctype html>
+<title>Contacts</title>
+
+<div>
+    <form action="contacts" method="post">
+        <div>
+            <label>
+                <span>First Name</span>
+                <input type="text" name="given_name"/>
+            </label>
+        </div>
+        <div style="padding-top: 5px;">
+            <label>
+                <span>Last Name</span>
+                <input type="text" name="family_name"/>
+            </label>
+        </div>
+        <div style="padding-top: 5px;">
+            <label>
+                <span>Email</span>
+                <input type="email" name="email"/>
+            </label>
+        </div>
+        <div style="padding-top: 15px;">
+            <input type="submit"/>
+        </div>
+    </form>
+</div>
+
+<div style="padding-top: 10px;">
+    Authenticated: {{ isAuthenticated }} or <a href="/login">Login</a>
+</div>

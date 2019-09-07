@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Authentication successful</h1>
+
+
+
+<form class="example" action="ContactSearch" name="contactsearch" method="POST" autocomplete="off">
+<input type="text" placeholder="Search by Email" name="email" >
+<button type="submit" onclick="contactsearch.submit();" >Contact</button>
+</form>
+
+<h1>{{ output|safe }}</h1>
+
+
+
+<form class="example" action="addContacts" name="addcontacts" method="POST" autocomplete="off">
+    <input type="text" placeholder="Name" name="name" >
+    <input type="text" placeholder="Email" name="email" >
+<button type="submit" onclick="addcontacts.submit();" >Contact</button>
+</form>
+
+</body>
+</html>

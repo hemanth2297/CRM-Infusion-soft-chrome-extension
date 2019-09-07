@@ -1,0 +1,153 @@
+body {
+  width: 800px;
+  height: 900px;
+  margin: 0px;
+  /* background-color:#CC9966; */
+ background-image: url("signup-bg.jpg");
+ background-size: cover; /* Resize the background image to cover the entire container */
+ /* height: 500px; /* You must set a specified height */
+ background-position: center; /* Center the image */
+ background-repeat: no-repeat; /* Do not repeat the image */
+
+/* background-color: powderblue; */
+}
+.header{
+  color: white;
+}
+h1{
+  margin: 0px;
+  font-size: 40px;
+}
+.heading{
+  margin-bottom: 40px;
+  padding: 10px;
+}
+.column {
+  float: left;
+  width: 30%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;
+height: 100px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.avatar {
+  vertical-align: middle;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  top: -50px;
+  margin-bottom: -50px;
+  /* object-fit: cover; */
+}
+.container-fluid content-row{
+  width: 50px;
+  height: 50px;
+
+}
+.card {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+  width: 80%;
+   /* height:200px;  */
+  margin-top: auto;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  display: inline-block;
+  border-style: solid;
+  border-color: powderblue;
+
+  /* opacity: 1.0 */
+}
+.card-heading{
+  background-image: url("linkedin.png");
+  -webkit-background-size:cover;
+  background-size: cover;
+  height: 100px;
+}
+
+.card:hover {
+  -ms-transform: scale(1.15); /* IE 9 */
+  -webkit-transform: scale(1.15); /* Safari 3-8 */
+  transform: scale(1.15);
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: black;
+  background-color: steelblue;
+  text-align: center;
+  cursor: pointer;
+  width: 92%;
+  font-size: 18px;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+.navbar {
+  width: 100%;
+  background-color: transparent;
+  overflow: auto;
+  background-size: cover;
+  padding: 10px 10px;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+  background-size: cover;
+}
+
+.active {
+  background-color: black;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: inline-block;
+  }
+}

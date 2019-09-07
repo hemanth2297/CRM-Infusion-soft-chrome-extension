@@ -1,0 +1,52 @@
+{
+  "manifest_version": 2,
+
+  "name": "LinkedIn",
+
+  "description": "This extension helps you to connect to potential people!",
+  "version": "1.0",
+ "content_scripts" :[
+   {
+   "matches" : [
+     "<all_urls>"
+   ],
+   "js" : ["jquery-2.2.4.min.js","content.js"],
+   "all_frames": true
+ }
+ ],
+"content_security_policy":  "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "browser_action": {
+   "default_icon": "icon.png",
+   "default_popup": "default.html"
+
+
+
+  },
+
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "permissions": [
+   "activeTab",
+   "tabs",
+   "storage",
+   "webRequest",
+    "webRequestBlocking",
+     "\u003Call_urls>" ,
+   "https://www.netflix.com/browse",
+"http://localhost:8210/*"
+
+
+ ],
+ "background":
+   {
+     "scripts" : [
+   "background.js"
+
+    ]
+  },
+  "web_accessible_resources": [
+      "jquery-2.2.4.min.js"
+
+    ]
+
+
+}
